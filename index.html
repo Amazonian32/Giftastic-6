@@ -9,37 +9,54 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="app.js">
+    <script src="app.js"></script>
 </head>
 
 <body>
-
     <div class="container">
         <h1>Search the gifs</h1>
     </div>
-
+    <br>
+    <div class="container">
+        <div id="buttons"></div>
+    </div>
+    <br>
     <div class="container">
         <div class="row">
             <div class="col">
-                <div id="buttons">
-                    <button class="btn">HELLO</button>
-                </div>
-            </div>
-            <div class="col">
-                <div id="search">
-                    <form id="gif-form">
-                        <input type="text" id="gif-input" placeholder="Search and Add Gifs">
-                        <button id="addGif" class="btn" type="submit" value="addGif">Search</button>
-                    </form>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Add A Topic" aria-label="Add A Topic"
+                        aria-describedby="button-addon2" id="search">
+                    <div class="input-group-append">
+                        <button class="btn searchButton" type="button" id="button-addon2">Add</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <br>
-    <div class="container">
-        <div id="images"></div>
     </div>
+    <br>
+    <div class="container" id="images">
+    </div>
+    <!-- <script type="text/javascript">
+
+        $(".gif").on("click", function () {
+            var gif = $(this)
+            var state = gif.attr("data-state")
+            var animate = gif.attr("data-animate")
+            var still = gif.attr("data-still")
+            if (state == "still") {
+                gif.attr("src", animate)
+                gif.attr("data-state", "animate")
+            } else {
+                gif.attr("src", still)
+                gif.attr("data-state", "still")
+            }
+        });
+
+    </script> -->
 </body>
 
 </html>

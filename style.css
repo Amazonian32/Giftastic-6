@@ -1,10 +1,12 @@
 html, body {
     background-color: #023059;
+    background-image: url("https://thumbs.gfycat.com/SpectacularObviousGordonsetter-max-1mb.gif");
     text-align: center;
     color: #A7F5FF;
     margin: 5px;
     text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
     font-size: 20px;
+    font-family: 'Baloo Bhaina 2', cursive;
 }
 
 .container {
@@ -21,4 +23,22 @@ button {
     background-color: #F205CB;
     box-shadow: #035AA6 4px 4px;
     margin: 10px;
+}
+input {
+    border-radius: 25px;
+    box-shadow: #035AA6 4px 4px;
+    margin: 10px auto;
+}
+img {
+    border-radius: 25px;
+}
+#ratings {
+    color: #fff;
+    text-shadow: none;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 25px;
+    background-color: #064881;
+    box-shadow: rgb(6, 45, 82) 4px 4px;
 }
